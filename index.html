@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
 	<title>I'm Niranjan</title>
@@ -15,8 +13,11 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link rel="icon" type="image/x-icon" />
 		<script src="asset/js/index.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="asset/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -27,15 +28,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/timeline.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <style>
+<style>
     body{
-        background: #f7f5f6;
-      }	
-  </style>
+      background: #f7f5f6;
+    }	
+</style>
   
   <nav id="home">  
     <div class="header">
@@ -44,27 +43,25 @@
     </div>
     <ul>
       <li><a href="#contact" target="">Contact</a></li>
-      <li><a href="#title" target="">Projects</a></li>
+      <li><a href="#achievements" target="">Achievements</a></li>
+      <li><a href="#projects" target="">Projects</a></li>
       <li><a href="#aboutMe" target="">About</a></li>
-      <li><a href="" id="button1" >Home</a></li>
+      <li><a href="" id="#hero" >Home</a></li>
       <li><a href=""></a></li>
       <li><a href=""></a></li>
+
     </ul>
   </nav>
   
   <!-- home  -->
-  <div class="collaboration" id="" class="title">
-    <img src="asset/img/bg.png" class="ribbon"/>	
+  <div class="hero" id="hero" >
+    <img src="asset/img/bg.svg" class="ribbon"/>	
     <h1 style="font-size: 44px;" class="title"><b>HI, I'M NIRANJAN!</b></h1>
     <div class="collab-grid">
-      <h2 class="subtitle">&lt;Developer/&gt;</h2>
+      <!-- <h2 class="subtitle">&lt;Developer/&gt;</h2> -->
+      <h1 class="subtitle">&lt;<span class="txt-rotate" data-period="2000" data-rotate='[ "Developer", "Student" ]'></span>/&gt;</h1>
     </div>
     <a href="#aboutMe" id="btn" class="btn">About Me</a>
-  </div>
-  
-  <!-- skills -->
-  <div class="projects" id="exp" class="title">
-  
   </div>
   
   <!-- about -->
@@ -100,11 +97,144 @@
     </div>
   </div>
   
-  <!-- projects	 -->
-  <div class="projects" id="exp" class="title">	
-    
+  <!-- skills	 -->
+  <div class="skills" id="" class="title">	
+    <h1 class="title">Skills</h1>
+    <div class="content">
+      <div class="servicesBx">
+        <i class="devicon-html5-plain"></i>
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-css3-plain"></i>
+
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-javascript-plain"></i>
+
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-angularjs-plain"></i>
+
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-nodejs-plain"></i>
+
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-android-plain"></i>
+
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-mysql-plain-wordmark"></i>
+
+      </div>
+
+      <div class="servicesBx">
+        <i class="devicon-java-plain"></i>
+
+      </div>
+      
+      <div class="servicesBx">
+        <i class="devicon-cplusplus-plain"></i>
+ 
+      </div>
+      <div class="servicesBx">
+        <i class="devicon-xd-plain"></i>
+
+      </div>
+    </div>
   </div>
-  
+
+  <!-- projects -->
+  <div class="projects" id="projects">
+    <h1 class="title">Projects</h1>
+    <div class="gallery-flex">
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Why iPad">
+          <a href="" target="_blank"><img src="asset/img/projects/idGen.jpg" alt="iDGen"></a>
+        </div>
+        <a class="gallery-link" href="" target="_blank">iDGen</a>
+        <p>php, Sql</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Candy Pod">
+          <a href="" target="_blank"><img src="asset/img/projects/candy-pod.jpg" alt="CandyPod"></a>
+        </div>
+        <a class="gallery-link" href="" target="_blank">Candy Pod</a>
+        <p>Android</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery grey-border" data-title="Movies App">
+          <a href="" target="_blank"><img src="asset/img/projects/top-movies.jpg" alt=""></a>
+        </div>
+        <a class="gallery-link" href="" target="_blank">Movies App</a>
+        <p>Android</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery grey-border" data-title="Animal Crossing">
+          <a href="" target="_blank"><img src="asset/img/projects/baking-app.jpg" alt=""></a>
+        </div>
+        <a class="gallery-link" href="" target="_blank">Recipe App</a>
+        <p>Android</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- achievements -->
+  <div id="achievements" class="achievements">
+    <h1 class="title">Achievements</h1>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          
+          <div class="carousel-item active">
+              <img src="asset/img/achievements/1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/2.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+          <div class="carousel-item">
+              <img src="asset/img/achievements/3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/7.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/8.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/9.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="asset/img/achievements/10.jpg" class="d-block w-100" alt="...">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
   <!-- experience -->
   <div class="projects" id="exp" class="title">
       <h1 class="title">Experience</h1>
@@ -113,29 +243,29 @@
           <div class="timeline fourth">
             <span class="timeline-icon"></span>
             <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" data-aos-achor=".XboxTimelineContent">
-              <i class="icon fa fa-windows"></i>
+              <i class="icon fa fa-desktop"></i>
               <p class="description">
                 <h5><a href="https://www.oasisinfobyte.in/" target="_blank">Web Development and Designing Intern</a></h5>
                 <h6>Oasis Infobyte</h6>
               </p>
             </div>
-            <div class="year"><span>01/02/2020 - Present</span></div>
+            <div class="year"><span>02/22 - Present</span></div>
           </div>
           <div class="timeline">
             <span class="timeline-icon"></span>
             <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-              <i class="icon fa fa-globe"></i>
+              <i class="icon fa fa-desktop"></i>
               <p class="description">
                 <h5><a href="https://internshipstudio.com/" target="_blank">Website Designing Intern</a></h5>
                 <h6>Internship Studio</h6>
               </p>
             </div>
-            <div class="year"><span>15/07 - 19/08/2021</span></div>
+            <div class="year"><span>07/21 - 08/21</span></div>
           </div>
           <div class="timeline second">
             <span class="timeline-icon"></span>
             <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-              <i class="icon fa fa-group"></i>
+              <i class="icon fa fa-desktop"></i>
               <p class="description">
                 <h5><b>Undergraduate & Masters Asia
                   Virtual Experience Program</b></h5>
@@ -153,12 +283,12 @@
                 <h6>Rising Innoveters, Sangli</h6>
               </p>
             </div>
-            <div class="year"><span>05/2019 - 06/2019</span></div>
+            <div class="year"><span>05/19 - 06/19</span></div>
           </div>
         </div>
       <div class="row text-center">
         <div class="col-12">
-          <a class="btn btn-primary externalLinkButton" href="https://www.linkedin.com/in/holly-boothroyd-68308012a/" target="_blank">Learn More</a>
+          <a class="btn btn-primary externalLinkButton" href="asset/documents/cv.pdf" target="_blank">Resume</a>
         </div>
       </div>
     </section>
@@ -169,7 +299,7 @@
     <h1 class="title">Education</h1>
     <section class="section container-fluid px-0" id="experience">
       <div class="main-timeline">
-        <div class="timeline">
+        <div class="timeline second">
           <span class="timeline-icon"></span>
           <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
             <i class="icon fa fa-graduation-cap"></i>
@@ -180,7 +310,7 @@
           </div>
           <div class="year"><span>2020-Present</span></div>
         </div>
-        <div class="timeline second">
+        <div class="timeline third">
           <span class="timeline-icon"></span>
           <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
             <i class="icon fa fa-graduation-cap"></i>
@@ -204,13 +334,12 @@
         class="fa fa-instagram"></i> Instagram</a></li>
       <li><a href="https://twitter.com/niranjan_ai" target="_blank" title="Twitter"><i
         class="fa fa-twitter"></i> Twitter</a></li>
-      <li><a href="https://github.com/kimm-cs" target="_blank" title="Github"><i
+      <li><a href="https://github.com/niranjanbhoi" target="_blank" title="Github"><i
         class="fa fa-github"></i> Github</a></li>
-  
       <!-- <li><a href="" target="_blank"><i class="fa fa-medium"></i> Medium</a></li> -->
       <li><a href="https://www.linkedin.com/in/niranjan-bhoi-a9b9941a8" target="_blank"><i class="fa fa-linkedin"></i>
         LinkedIn</a></li>
-      <li><a href="https://medium.com/@kimm_cs" target="_blank"><i class="fa fa-book"></i> Blog</a>
+      <li><a href="###" target="_blank"><i class="fa fa-book"></i> Blog</a>
       </li>
     </ul>
     </div>
@@ -228,7 +357,7 @@
     </div>
     </div>
   </div>
-  
+
   <!-- scrollUp -->
   <a id="button" href="#home" style="text-decoration: none;"></a>
   <!-- scripts -->
@@ -281,10 +410,8 @@
     }
   
   </script>
-  
   <script>AOS.init();</script>
-  <script src="JS/scroll.js"></script>
+  <script src="asset/js/autoType.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
-  
   </html>
