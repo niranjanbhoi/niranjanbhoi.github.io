@@ -400,6 +400,9 @@ a:hover {
   border: 0;
   cursor: pointer;
 }
+#fitContent{
+  height: 80%;
+}
 #button {
   display: inline-block;
   background-color: #13a3b5;
