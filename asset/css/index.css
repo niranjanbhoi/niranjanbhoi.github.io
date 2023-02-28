@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&amp;display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
   html{
     scroll-behavior :smooth;
   }  
@@ -24,7 +25,7 @@ h2 {
   letter-spacing: 2.4px;
   font-size: 32px;
   color: #676767;
-  font-weight: 600px;
+  font-weight: 600;
 }
 nav {
   height: auto;
@@ -184,10 +185,12 @@ a:hover {
 
 .title {
   font-family: 'Poppins', sans-serif;
-  color: #575656;
+  color: #676767;
   margin-bottom: 9px;
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
   font-weight: 700;
-  position: relative; }
+  position: relative;
+}
   .subtitle{
     font-family: 'Poppins', sans-serif;
     color: #575656;
@@ -200,7 +203,20 @@ a:hover {
   background:  #fc8e8c; 
 }
 .achievements .title{
-  color: #fff; 
+  color: #fff;
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+}
+.projects .title{
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+}
+.skills .title{
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+}
+.aboutMe .title{
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+}
+.hero .title{
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
 }
 .skills {
   background:  #fc8e8c; 
@@ -311,9 +327,10 @@ a:hover {
   .social-container > * {
     flex-basis: 50%;
     background: white;
-    color: #676767; }
+    }
   .social-container .title {
-    color: #676767;
+    font-size: clamp(1.5rem, 5vw, 2.3rem);
+    text-align: left;
     z-index: 2;
     position: relative; }
   .skills .title{
@@ -326,18 +343,21 @@ a:hover {
 .read-more {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  color: #888; }
+  }
   .read-more p, .read-more a {
     font-family: 'Lato', sans-serif; }
   .read-more .extra {
     margin: 20px 0; }
     .read-more .extra a {
-      color: #676767; }
+
+      color: #6269f2;
+    }
 
 .social {
   display: flex;
   flex-direction: column; }
   .social ul {
+  padding: 0;
     display: block;
     list-style-type: none; }
     .social ul li {
@@ -347,7 +367,7 @@ a:hover {
       .social ul li i {
         margin-right: 5px; }
       .social ul li i, .social ul li a {
-        color: #676767; }
+        color: #6269f2; }
       .social ul li a {
         font-size: 16px; }
 
@@ -518,8 +538,8 @@ a:hover {
     .social-container > * {
       flex-basis: 100%; }
     .social-container .read-more, .social-container .social, .social-container .contact {
-      margin: 0;
-      margin-bottom: 10px; }
+      margin: 0 0 10px;
+    }
     
       .title {
         font-size: 17px;
