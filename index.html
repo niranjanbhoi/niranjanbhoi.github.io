@@ -31,6 +31,8 @@
 </head>
 <body>
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:200,300,400,600');
+
     body{
       background: #f7f5f6;
     }
@@ -44,6 +46,54 @@
     a {
       color: black;
     }
+
+    .media {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .layer {
+      opacity: 0;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10px;
+      height: 90%;
+      background: #FFF;
+      color: #151E3F;
+      transition: all 0.9s ease;
+
+    }
+
+    .media p {
+      font-family: 'Inconsolata', monospace;
+      text-align: center;
+      font-size: 22px;
+      letter-spacing:1px;
+    }
+
+    .media:hover .layer {
+      opacity: 0.8;
+      width: 90%;
+      transition: all 0.5s ease;
+
+    }
+    .btn{
+      background-color: black;
+          border-color: black;
+          margin-top: 1%;
+          color: #FFF;
+    }
+    .externalLinkButton:hover {
+  cursor: pointer;
+  background-color: #f26f77;
+  border-color: #f26f77;
+  color: #FFF;
+}
 </style>
   
   <nav id="home">  
@@ -65,8 +115,14 @@
   
   <!-- home  -->
   <div class="hero" id="hero" >
-    <img src="asset/img/bg.png" class="ribbon"/>	
-    <h1 style="font-size: 44px;" class="title"><b>HI, I'M NIRANJAN!</b></h1>
+<!--    <img src="https://github.com/niranjanbhoi/niranjanbhoi/blob/main/job_illo_final2.png?raw=true" class="ribbon"/>-->
+    <img id="right" src="undraw_programming_re_kg9v.svg" class="ribbon"/>
+<!--    <img id="left" src="asset/img/bg.png" class="ribbon"/>-->
+<!--    <img id="left" src="undraw_proud_coder_re_exuy.svg" class="ribbon"/>-->
+    <h1 class="title">Hi. I'm <span class="special">Niranjan.</span>
+    </h1>
+<!--    <h1 class="title">Hi. I'm Niranjan.-->
+    </h1>
     <div class="collab-grid">
       <!-- <h2 class="subtitle">&lt;Developer/&gt;</h2> -->
       <h1 class="subtitle">&lt;<span class="txt-rotate" data-period="2000" data-rotate='[ "Developer", "Student" ]'></span>/&gt;</h1>
@@ -93,7 +149,7 @@
         <br><br>
         <h3>My Interests</h3>
         <p>
-        Apart from this, i have got a tons of interests! <br><br>
+        Apart from this, I have got a tons of interests! <br><br>
         &gt;reading books 📖<br>
         &gt;photography; 📸<br>
         &gt;anime drawing/gaming!; 🎮<br>
@@ -102,7 +158,9 @@
         <br>
       </div>
       <div aling="right" class="w50">
-        <img src="asset/img/profile.jpg" class="img-responsive imgIM">
+<!--        <img src="asset/img/profile.jpg" class="img-responsive imgIM">-->
+        <img src="Picsart_23-06-13_11-12-01-905-01.jpeg" class="img-responsive imgIM">
+
       </div>
     </div>
   </div>
@@ -164,14 +222,85 @@
 
   <!-- projects -->
   <div class="projects" id="projects">
-    <h1 class="title">Projects</h1>
+    <h1 class="title">Projects that I've worked on</h1>
     <div class="gallery-flex">
       <div class="gallery-wrap">
         <div class="gallery" data-title="Why iPad">
-          <a href="" target="_blank"><img src="asset/img/projects/idGen.jpg" alt="iDGen"></a>
+          <a href="" target="_blank">
+            <div class="media">
+              <div class="layer">
+                <p>CaptionCraft is a deep learning-based project which gives us AI-generated captions for social media posts.</p>
+              </div>
+              <img src="asset/img/projects/caption-craft.png" alt="Caption Craft" />
+            </div>
+          </a>
+        </div>
+        <a class="gallery-link" href="https://captioncraft-v48x.onrender.com/home" target="_blank">Caption Craft</a>
+        <p>Python, Flask, mongodb, Firebase</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Why iPad">
+          <a href="" target="_blank">
+            <div class="media">
+              <div class="layer">
+                <p>It's a web app for managing driving school student records and services which are offered to them.</p>
+              </div>
+              <img src="asset/img/projects/ds-world.png" alt="DS world">
+            </div>
+          </a>
+        </div>
+        <a class="gallery-link" href="" target="_blank">DS World</a>
+        <p>php, Sql</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Why iPad">
+          <a href="" target="_blank">
+<!--            <img src="asset/img/projects/idGen.jpg" alt="iDGen">-->
+            <div class="media">
+              <div class="layer">
+                <p>It's a web app for generating id cards in corporate and education.</p>
+              </div>
+              <img src="asset/img/projects/idGen.jpg" alt="iDGen">
+            </div>
+          </a>
         </div>
         <a class="gallery-link" href="" target="_blank">iDGen</a>
         <p>php, Sql</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Candy Pod">
+          <a href="" target="_blank">   <iframe style="height: 250px; width: 250px;" scrolling="no" title="landing-page" src="https://codepen.io/niranjanbhoi/embed/gOBMrGO?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/niranjanbhoi/pen/gOBMrGO">
+            landing-page</a> by Niranjan Bhoi (<a href="https://codepen.io/niranjanbhoi">@niranjanbhoi</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe> </a>       </div>
+        <a class="gallery-link" href="" target="_blank">Landing Page</a>
+        <p>HTML, CSS, JS</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Candy Pod">
+          <a href="" target="_blank">
+            <iframe style="height: 250px; width: 250px;" scrolling="no" title="caculator" src="https://codepen.io/niranjanbhoi/embed/VwEjppr?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+              See the Pen <a href="https://codepen.io/niranjanbhoi/pen/VwEjppr">
+              caculator</a> by Niranjan Bhoi (<a href="https://codepen.io/niranjanbhoi">@niranjanbhoi</a>)
+              on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+          </a>
+        </div>
+        <a class="gallery-link" href="" target="_blank">Calculator</a>
+        <p>HTML, CSS, JS</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery" data-title="Candy Pod">
+          <a href="" target="_blank">
+            <iframe  style="height: 250px; width: 250px;" scrolling="no" title="temperature-converter" src="https://codepen.io/niranjanbhoi/embed/dygXNjX?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+              See the Pen <a href="https://codepen.io/niranjanbhoi/pen/dygXNjX">
+              temperature-converter</a> by Niranjan Bhoi (<a href="https://codepen.io/niranjanbhoi">@niranjanbhoi</a>)
+              on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+          </a>       </div>
+        <a class="gallery-link" href="" target="_blank">Temperature Converter</a>
+        <p>HTML, CSS, JS</p>
       </div>
       <div class="gallery-wrap">
         <div class="gallery" data-title="Candy Pod">
@@ -202,37 +331,41 @@
     <h1 class="title">Achievements</h1>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-          
           <div class="carousel-item active">
-              <img id="fitContent" src="asset/img/achievements/1.jpg" class="d-block w-100" alt="...">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are delighted to announce the winners of the <a href="https://twitter.com/hashtag/DevfestPune?src=hash&amp;ref_src=twsrc%5Etfw">#DevfestPune</a> Crack the Code competition🤩.<br><br>Chaitanya Deshpande<br>Kim<br>Yash Parmar<br>Nandini Deore<br>Niranjan Bhoi<br><br>Congratulations 🥳 🎉 <a href="https://twitter.com/hashtag/devfestpune22?src=hash&amp;ref_src=twsrc%5Etfw">#devfestpune22</a></p>&mdash; GDG Pune (@GDGPune) <a href="https://twitter.com/GDGPune/status/1601095184833712128?ref_src=twsrc%5Etfw">December 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/2.jpg" class="d-block w-100" alt="...">
-          </div>
-          
-          <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/3.jpg" class="d-block w-100" alt="...">
+            <img  src="asset/img/achievements/ta-exp.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/4.jpg" class="d-block w-100" alt="...">
+              <img  src="asset/img/achievements/1.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/5.jpg" class="d-block w-100" alt="...">
+            <img  src="asset/img/achievements/2.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/6.jpg" class="d-block w-100" alt="...">
+              <img  src="asset/img/achievements/3.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/7.jpg" class="d-block w-100" alt="...">
+              <img  src="asset/img/achievements/4.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/8.jpg" class="d-block w-100" alt="...">
+              <img  src="asset/img/achievements/5.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/9.jpg" class="d-block w-100" alt="...">
+              <img  src="asset/img/achievements/6.jpg" class="d-block" alt="...">
           </div>
           <div class="carousel-item">
-              <img id="fitContent" src="asset/img/achievements/10.jpg" class="d-block w-100" alt="...">
+              <img  src="asset/img/achievements/7.jpg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img  src="asset/img/achievements/8.jpg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img  src="asset/img/achievements/9.jpg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img  src="asset/img/achievements/10.jpg" class="d-block" alt="...">
           </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -247,7 +380,7 @@
   </div>
 
   <!-- experience -->
-  <div class="projects" id="exp" class="title">
+  <div class="projects" id="exp">
       <h1 class="title">Experience</h1>
       <section class="section container-fluid px-0" id="experience">
         <div class="main-timeline">
@@ -255,10 +388,9 @@
             <span class="timeline-icon"></span>
             <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
               <i class="icon fa fa-code"></i>
-<!--              <img id="coding-ninjas" src="asset/img/cn.png" alt="Girl in a jacket">-->
               <p class="description">
-              <h5><b>TA Intern</b></h5>
-              <h6>Coding Ninjas</h6>
+                <h5><b>JAVA with DSA | TA (Teaching Assistant)</b></h5>
+                <h6>Coding Ninjas</h6>
               </p>
             </div>
             <div class="year"><span>08/22 - 31/22</span></div>
@@ -292,7 +424,7 @@
               <p class="description">
                 <h5><b>Undergraduate & Masters Asia
                   Virtual Experience Program</b></h5>
-                <h6>Microsoft</h6>
+                <h6></h6>
               </p>
             </div>
             <div class="year"><span>30/07/2020</span></div>
@@ -311,7 +443,7 @@
         </div>
       <div class="row text-center">
         <div class="col-12">
-          <a class="btn btn-primary externalLinkButton" href="asset/documents/cv.pdf" target="_blank">Resume</a>
+          <a class="btn externalLinkButton" href="asset/documents/Niranjan_Resume_2023.pdf" target="_blank">Resume</a>
         </div>
       </div>
     </section>
@@ -353,14 +485,14 @@
     <div class="social" id="social">
     <h1 class="title">Social Media</h1>
     <ul>
-      <li><a href="https://www.instagram.com/niranjan_ai" target="_blank" title="Instagram"><i
+      <li><a href="https://www.instagram.com/aincrad.ai/" target="_blank" title="Instagram"><i
         class="fa fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://twitter.com/niranjan_ai" target="_blank" title="Twitter"><i
+      <li><a href="https://twitter.com/aincrad_ai" target="_blank" title="Twitter"><i
         class="fa fa-twitter"></i> Twitter</a></li>
       <li><a href="https://github.com/niranjanbhoi" target="_blank" title="Github"><i
         class="fa fa-github"></i> Github</a></li>
       <!-- <li><a href="" target="_blank"><i class="fa fa-medium"></i> Medium</a></li> -->
-      <li><a href="https://www.linkedin.com/in/niranjan-bhoi-a9b9941a8" target="_blank"><i class="fa fa-linkedin"></i>
+      <li><a href="https://www.linkedin.com/in/niranjanbhoi/" target="_blank"><i class="fa fa-linkedin"></i>
         LinkedIn</a></li>
       <li><a href="###" target="_blank"><i class="fa fa-book"></i> Blog</a>
       </li>
@@ -370,7 +502,7 @@
     <div class="extra">
       <h1 class="title">Say Hi</h1>
       If you'd like to say hi or work with me
-      <a href="mailto:kimy.csjs@gmail.com">
+      <a href="mailto:niranjanbhoi.ts@gmail.com">
       <button>Drop me an email</button>
       <button ><img src="asset/img/mask.png" onclick='myfunction()' style="background: #ffe6ee;
         width: 50px;
@@ -403,7 +535,8 @@
     
   </script>
   
-  <script>var btn = $('#button');
+  <script>
+    var btn = $('#button');
   
     $(window).scroll(function() {
       if ($(window).scrollTop() > 300) {
@@ -415,7 +548,6 @@
   
     btn.on('click', function(e) {
     });
-  
   </script>
   
   <script type="text/javascript">

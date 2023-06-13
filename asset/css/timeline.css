@@ -1,7 +1,6 @@
 	@media (max-width: 750px) {
 		.main-timeline .timeline-icon:before { display: none; }
 	}
-
 	.main-timeline{
 		overflow: hidden;
 		position: relative;
